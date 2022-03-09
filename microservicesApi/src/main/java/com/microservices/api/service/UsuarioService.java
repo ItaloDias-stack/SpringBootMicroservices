@@ -6,6 +6,7 @@ import com.microservices.core.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.Optional;
 
 @Service
 public class UsuarioService {
@@ -27,5 +28,9 @@ public class UsuarioService {
 
     public boolean existsByUsernameAndPassword(String username, String password){
         return usuarioRepository.existsByUsernameAndPassword(username,password);
+    }
+
+    public Optional<Usuario> findByUsername(String username){
+        return usuarioRepository.findByUsername(username);
     }
 }

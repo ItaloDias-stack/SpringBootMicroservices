@@ -1,5 +1,6 @@
 package com.microservices.core.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -30,6 +31,7 @@ public class Usuario implements Serializable {
     private String username;
 
     @Column(nullable = false)
+    @JsonIgnore
     private String password;
 
 }
