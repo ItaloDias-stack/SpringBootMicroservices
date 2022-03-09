@@ -8,4 +8,8 @@ import java.util.UUID;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, UUID> {
+
+    boolean existsByUsernameAndPassword(String username, String password);
+
+    boolean existsByUsername(String username);
 }
