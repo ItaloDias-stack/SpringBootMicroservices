@@ -1,0 +1,3 @@
+com\microservices\core\model\Usuario.class
+com\microservices\core\model\Usuario$UsuarioBuilder.class
+com\microservices\core\repository\UsuarioRepository.class
