@@ -1,4 +1,4 @@
-package com.microservices.api.config;
+/*package com.microservices.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,4 +25,4 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated();
 
     }
-}
+}*/
