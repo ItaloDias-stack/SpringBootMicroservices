@@ -14,10 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableEurekaClient
 @EnableJpaRepositories({"com.microservices.core.repository"})
 public class ApiApplication {
-	@Bean
-	public PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
 	}

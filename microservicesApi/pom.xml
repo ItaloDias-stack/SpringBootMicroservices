@@ -9,6 +9,17 @@
 			<version>1.0.0-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
     </dependencies>
 	<parent>
 		<groupId>com.microservices</groupId>
@@ -18,6 +29,7 @@
 	</parent>
 
 	<artifactId>api</artifactId>
+	<description>This is an authentication microservice</description>
 	<version>0.0.1-SNAPSHOT</version>
 
 

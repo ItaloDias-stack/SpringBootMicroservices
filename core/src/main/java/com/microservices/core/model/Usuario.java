@@ -8,6 +8,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -34,4 +35,14 @@ public class Usuario implements Serializable {
     @JsonIgnore
     private String password;
 
+    @Column(nullable = false)
+    @JsonIgnore
+    private String role="USER";
+
+    public Usuario(@NotNull Usuario user) {
+        this.id = user.getId();
+        this.username = user.getUsername();
+        this.password = user.getPassword();
+        this.role = user.getRole();
+    }
 }
